@@ -65,5 +65,5 @@ A full-stack Kotlin Multiplatform (KMP) project demonstrating **Clean Architectu
 *   iOS: `./gradlew :app:shared:iosSimulatorArm64Test`
 
 ---
-
+This project is based on the JetBrains KMP Template.
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html) and [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform).
