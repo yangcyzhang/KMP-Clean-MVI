@@ -22,3 +22,10 @@ node_modules/
 kotlin-js-store/
 .kotlin-js-store/
 .wasm/
+
+# Native binaries
+*.a
+*.dylib
+*.so
+app/shared/native_lib/lib*
+app/shared/src/androidMain/jniLibs/

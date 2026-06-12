@@ -1,0 +1,6 @@
+headers = simple_math.h
+headerFilter = simple_math.h
+package = com.yangcyzhang.kmpcleanmvi.native
+staticLibraries = libsimple_math.a
+libraryPaths = /Users/edison/AndroidStudioProjects/KMP-Clean-MVI/app/shared/native_lib
+includeDirs = /Users/edison/AndroidStudioProjects/KMP-Clean-MVI/app/shared/native_lib

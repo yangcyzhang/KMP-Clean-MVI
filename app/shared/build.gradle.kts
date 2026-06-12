@@ -17,6 +17,13 @@ kotlin {
             baseName = "Shared"
             isStatic = true
         }
+        iosTarget.compilations.getByName("main") {
+            val simple_math by cinterops.creating {
+                definitionFile.set(project.file("src/nativeInterop/cinterop/simple_math.def"))
+                packageName("com.yangcyzhang.kmpcleanmvi.native")
+                includeDirs.allHeaders(project.file("native_lib"))
+            }
+        }
     }
     
     jvm()

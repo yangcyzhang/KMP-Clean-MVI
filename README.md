@@ -30,6 +30,20 @@ A full-stack Kotlin Multiplatform (KMP) project demonstrating **Clean Architectu
 *   **Backend**: Ktor Server
 *   **Architecture**: Clean Architecture + MVI
 *   **Language**: 100% Kotlin
+*   **Native**: CInterop (iOS), JNI (Android/Desktop), JS Interop (Web)
+
+## 🏗 Native Integration
+
+The project demonstrates calling a shared C library (`simple_math.c`) across all platforms:
+
+| Platform | Technology | Implementation Detail |
+| :--- | :--- | :--- |
+| **iOS** | **CInterop** | Links C static library (`.a`) into the Kotlin/Native framework. |
+| **Android** | **JNI (NDK)** | Uses NDK Clang to compile `.so` library, loaded via `System.loadLibrary`. |
+| **Desktop** | **JNI (JVM)** | Loads macOS `.dylib` dynamically at runtime. |
+| **Web** | **JS Interop** | Utilizes JavaScript engine for low-level execution. |
+
+A master script `compile_native.sh` is provided to compile all native components in one go.
 
 ## 🏃 Running the apps
 
